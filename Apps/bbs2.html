@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 
 
-<!-- Ultimate Game Stash file--> 
-<!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
-
-
 
 
 <html lang="en">
@@ -14,7 +10,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://36043189-480959866522093217.preview.editmysite.com/uploads/b/139890129-743801889220072865/files/assets/css/app.css" type="text/css" />
-    <title>Basketball Stars</title>
+    <title>Math edu</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
@@ -45,7 +41,7 @@
             gameId: "ycc9yyyfyazoiibce061j1b7jx91tt8a",
             onEvent: function (event) {
                 switch (event.name) {
-                    case "SDK_GAME_START":
+                    case "SDK_G_START":
                         // advertisement done, resume game logic and unmute audio
                         var event;
                         if (notIE11) {
@@ -57,7 +53,7 @@
                         document.getElementById("content").dispatchEvent(event);
                         break;
                     case "SDK_GAME_PAUSE":
-                        // pause game logic / mute audio
+                        // pause gme logic / mute audio
                         var event;
                         if (notIE11) {
                             event = new Event("SDK_GAME_PAUSE");
