@@ -67,39 +67,19 @@ icon.href = "images/psicon.png";
 
 
 
+/* audio */
+  const button = document.getElementById("myButton");
+  const sound = document.getElementById("clickSound");
 
-
-
-
-
-/* jumpscare script */
-
-const button = document.getElementById('fadeButton');
-const image = document.getElementById('fadeImage');
-const sound = document.getElementById('fadeSound');
-
-button.addEventListener('click', () => {
-  sound.currentTime = 0;
-  sound.play();
-
-  // Show the image
-  image.style.opacity = 1;
-
-  // Fade out after a short delay
-  setTimeout(() => {
-    image.style.opacity = 0;
-  }, 100);
-});
-
+  button.addEventListener("click", () => {
+    sound.play();
+  });
 
 
 </script>
 
 
 <!-- END OF SCRIPTS -->
-
-
-
 
 
 <div class="bgm"> 
@@ -177,9 +157,9 @@ lessons. These include, Math, English, History, and Science.</h3>
 
 
 <!-- Button that triggers the overlay -->
-<button class="mathbutton" id="fadeButton">Buy</button>
+<button class="mathbutton" id="myButton">g00n center@l</button>
 <!-- Sound -->
-<audio id="fadeSound" src="lilbro.mp3"></audio>
+<audio id="clickSound" src="lilbro.mp3"></audio>
 
 
 </div>
