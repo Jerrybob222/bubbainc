@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const previewData = {
     dta: {
       img: "images/dta.png",
-      text: "Open world driving chaos game."
+      text: "similar to g†@ "
     },
     raldi: {
       img: "images/raldi.png",
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           previewBox.classList.add("show");
         }
-      }, 2000); // 2-second hover delay
+      }, 1000); // 2-second hover delay
     });
 
     // Follow cursor while hovering
