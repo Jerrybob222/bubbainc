@@ -84,10 +84,10 @@ buttons.forEach(button => {
     // start 2-second timer
     hoverTimer = setTimeout(() => {
       // find preview class
-      const gameClass = [...button.classList].find(c => previewData[c]);
-      if (gameClass) {
-        previewImg.src = previewData[gameClass].img;
-        previewText.textContent = previewData[gameClass].text;
+      const appClass = [...button.classList].find(c => previewData[c]);
+      if (appClass) {
+        previewImg.src = previewData[appClass].img;
+        previewText.textContent = previewData[appClass].text;
 
         // position near mouse
         previewBox.style.left = (e.pageX + 10) + "px";
@@ -108,6 +108,10 @@ buttons.forEach(button => {
   });
 
 });
+
+
+const appClass = [...button.classList].find(c => previewData[c]);
+
 
 
 
