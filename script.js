@@ -58,21 +58,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const previewData = {
     // PC buttons
     dta: { url: "Apps/DTA.html", text: "g†@ style app" },
-    raldi: { url: "", text: "" },
-    drift: { url: "", text: "" },
-    bacon: { url: "", text: "" },
-    bbppagelessons: { url: "", text: "" },
-    dtr: { url: "", text: "" },
-    PeoplePg: { url: "", text: "" },
-    Talletail: { url: "", text: "" },
-    "b-cksh-t": { url: "", text: "" },
-    funnysh0t: { url: "", text: "" },
-    cloverp: { url: "", text: "" },
-    DRIVINGLESSONS: { url: "", text: "" },
-    "bul forcee": { url: "", text: "" },
-    hl: { url: "", text: "" },
-    suph: { url: "", text: "" },
-    ultrak1ll: { url: "", text: "" },
+    raldi: { url: "PC/RALDI.html", text: "modded version of b@ld1" },
+    m: { url: "broken", text: "broken" },
+    superh: { url: "PC/suph.html", text: " hit red people" },
+    uk: { url: "PC/ultrak1ll.html", text: " be a robot and hit z0mb13s" },
+    bacon: { url: "PC/baconmay.html", text: "be a pig and attack" },
+    bbp: { url: "PC/bbppagelessons.html", text: "dowload only. Dont let the bald guy get you" },
+    delta: { url: "PC/dtr.html", text: " rpg style app " },
+    ppl: { url: "PC/PeoplePg.html", text: "spawn people and make scenario" },
+    tt: { url: "PC/Talletail.html", text: "dont let the bear thing get you at night. horror" },
+    bsr: { url: "PC2/b-cksh-t.html", text: "a rng based app." },
+    funy: { url: "PC/funnysh0t.html", text: " fps style lesson" },
+    clovp : { url: "Apps/cloverp.html", text: "l@s v3g@s" },
+    drive: { url: "PC2/DRIVINGLESSONS.html", text: "learn how to apply for a driving license." },
+    bf: { url: "PC/bul forcee.html", text: "might be broken i forgot" },
+    hl: { url: "PC/hl.html", text: "very popular." },
 
     // Arcade buttons
     yokedsqrt: { url: "", text: "" },
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           previewBox.classList.add("show");
         }
-      }, 2000); // 2-second hover delay
+      }, 1000); // 2-second hover delay
     });
 
     button.addEventListener("mousemove", (e) => {
