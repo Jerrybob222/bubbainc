@@ -52,63 +52,54 @@ fetch("/navbar.html")
 
     /* previewer of apps */
 
+const previewBox = document.getElementById("preview-box");
+const previewIframe = document.getElementById("preview-iframe");
+const previewText = document.getElementById("preview-text");
 
-document.addEventListener("DOMContentLoaded", () => {
-  const previewBox = document.getElementById("preview-box");
-  const previewImg = document.getElementById("preview-img");
-  const previewText = document.getElementById("preview-text");
+const previewData = {
+  dta: {
+    url: "PC/dta.html",
+    text: "Open world driving chaos game."
+  },
+  raldi: {
+    url: "PC/.html",
+    text: "Weird math horror game."
+  },
+  drift: {
+    url: "PC/.html",
+    text: "Simple but addictive drifting game."
+  }
+};
 
-  let hoverTimer;
+let hoverTimer;
 
-  // Map each appClass to its preview content
-  const previewData = {
-    dta: {
-      img: "https://www.bubbaincorp.com/PC/dta",
-      text: "similar to g†@ "
-    },
-    raldi: {
-      img: "images/raldi.png",
-      text: "Weird math horror game."
-    },
-    drift: {
-      img: "images/drift.png",
-      text: "Simple but addictive drifting game."
-    }
-  };
+const buttons = document.querySelectorAll(".mathbutton");
 
-  const buttons = document.querySelectorAll(".mathbutton");
+buttons.forEach(button => {
+  button.addEventListener("mouseenter", (e) => {
+    hoverTimer = setTimeout(() => {
+      const appClass = [...button.classList].find(c => previewData[c]);
+      if (appClass) {
+        previewIframe.src = previewData[appClass].url;
+        previewText.textContent = previewData[appClass].text;
 
-  buttons.forEach(button => {
-
-    button.addEventListener("mouseenter", (e) => {
-      hoverTimer = setTimeout(() => {
-        // find the class that exists in previewData
-        const appClass = [...button.classList].find(c => previewData[c]);
-        if (appClass) {
-          previewImg.src = previewData[appClass].img;
-          previewText.textContent = previewData[appClass].text;
-
-          previewBox.style.left = (e.pageX + 10) + "px";
-          previewBox.style.top = (e.pageY + 10) + "px";
-
-          previewBox.classList.add("show");
-        }
-      }, 1000); // 2-second hover delay
-    });
-
-    // Follow cursor while hovering
-    button.addEventListener("mousemove", (e) => {
-      if (previewBox.classList.contains("show")) {
         previewBox.style.left = (e.pageX + 10) + "px";
         previewBox.style.top = (e.pageY + 10) + "px";
+
+        previewBox.classList.add("show");
       }
-    });
+    }, 2000); // 2-second hover
+  });
 
-    // Hover end → fade out and cancel timer
-    button.addEventListener("mouseleave", () => {
-      clearTimeout(hoverTimer);
-      previewBox.classList.remove("show");
-    });
+  button.addEventListener("mousemove", (e) => {
+    if (previewBox.classList.contains("show")) {
+      previewBox.style.left = (e.pageX + 10) + "px";
+      previewBox.style.top = (e.pageY + 10) + "px";
+    }
+  });
 
+  button.addEventListener("mouseleave", () => {
+    clearTimeout(hoverTimer);
+    previewBox.classList.remove("show");
   });
 });
