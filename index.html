@@ -4,9 +4,27 @@
 
 <head>
 
-<iframe src="navbar.html" class="navbar-frame" ></iframe>
+<link rel="stylesheet" href="styles.css">
+
+<title>Bubba Incorporated II™</title>
+
+</head>
+
+<body>
 
 
+<div id="navbar-container"> </div>
+
+
+
+
+<script>
+fetch("navbar.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("navbar-container").innerHTML = data;
+  });
+</script>
 
 
 
