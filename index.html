@@ -111,8 +111,10 @@ lessons. These include, Math, English, History, and Science.</h3>
 
 <div class="mascot">
     <img src="images/mascot.jpg" alt="mascot">
+
     <a href="1FORMrequest.html" class="mascotbutton">Request app/bug</a>
-    <a href="changelog.txt" class="mascotbutton">Change log</a>
+
+    <a onclick="openLog()" class="mascotbutton">Change log</a>
 </div>
 
 
@@ -160,6 +162,9 @@ function playSound() {
   document.getElementById("mySound").play();
 }
 
+function openLog() {
+  window.open("changelog.txt", "_blank");
+}
 </script>
 
 <hr class="line">
