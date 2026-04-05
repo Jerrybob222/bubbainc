@@ -73,6 +73,7 @@ fetch("/navbar.html")
     drive: { url: "PC2/DRIVINGLESSONS.html", text: "learn how to apply for a driving license." },
     bf: { url: "PC/bul forcee.html", text: "might be broken i forgot" },
     hl: { url: "PC/hl.html", text: "very popular." },
+    dso: { url: "PC/DEDs.html", text: "might be slow or fast idk." },
 
     // Arcade buttons
     yokedsqrt: { url: "ARC/yokedsqrt.html", text: "get strong and healthy" },

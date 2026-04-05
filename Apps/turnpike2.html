@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 
 
-<!-- Ultimate Game Stash file--> 
-<!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
-
-
 
 <html lang="en-us" style="height:100%; overflow:hidden">
 <head>
   <base href="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@79091a3feb921044b3597bd32cea7357b43e2d9c/indian-truck-simulator-3d-gh-pages/">
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Unity WebGL Player | BlightBorne</title>
+  <title>lessons online for college and career readyness</title>
   <style>
     * {
       margin: 0;
@@ -172,7 +168,7 @@
     }
 
     function resizeUnityContainer() {
-      var container = document.getElementById("gameContainer");
+      var container = document.getElementById("meContainer");
       if (container) {
         container.style.width = window.innerWidth + "px";
         container.style.height = window.innerHeight + "px";
@@ -182,7 +178,7 @@
     window.addEventListener('resize', resizeUnityContainer);
 
     function UnityProgress(gameInstance, progress) {
-      var container = document.getElementById("gameContainer");
+      var container = document.getElementById("meContainer");
       if (container) document.body.style.background = container.style.background;
 
       if (!gameInstance.Module) {
@@ -239,7 +235,7 @@
             let blob = new Blob([JSON.stringify(config)], { type: "application/json" });
             let blobUrl = URL.createObjectURL(blob);
 
-            window.gameInstance = UnityLoader.instantiate("gameContainer", blobUrl, {
+            window.gameInstance = UnityLoader.instantiate("meContainer", blobUrl, {
               onProgress: UnityProgress,
               Module: {
                 onRuntimeInitialized: function () {
@@ -263,7 +259,7 @@
 </head>
 <body style="width:100%; height:100%; margin:0; overflow:hidden">
   <div id="webgl-content" style="width:100%; height: 100%">
-    <div id="gameContainer" style="width: 100%; height: 100%"></div>
+    <div id="meContainer" style="width: 100%; height: 100%"></div>
   </div>
   <div id="box"></div>
   <div id="loadingBox">
