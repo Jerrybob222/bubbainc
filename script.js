@@ -143,7 +143,7 @@ fetch("/navbar.html")
 
           previewBox.classList.add("show");
         }
-      }, 2000); // 2-second hover delay
+      }, 1000); // 2-second hover delay
     });
 
     button.addEventListener("mousemove", (e) => {
