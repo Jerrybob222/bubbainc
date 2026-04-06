@@ -74,7 +74,7 @@ fetch("/navbar.html")
     hl: { url: "PC/hl.html", text: "very popular." },
     dso: { url: "PC/DEDs.html", text: "might be slow or fast idk." },
     csg: { url: "PC/counterela.html", text: " chinese cs" },
- ragd: { url: "PC/clr@gd0llarchers", text: "what a doll. shoot arrows at people" }, 
+ raga: { url: "PC/clr@gd0llarchers", text: "what a doll. shoot arrows at people" }, 
  
     // Arcade buttons
     yokedsqrt: { url: "ARC/yokedsqrt.html", text: "get strong and healthy" },
@@ -254,3 +254,5 @@ document.addEventListener('mousemove', (e) => {
 document.addEventListener('mouseup', () => {
   isDragging = false;
 });
+
+
