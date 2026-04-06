@@ -92,7 +92,7 @@ fetch("/navbar.html")
     rtsr: { url: "ARC/rooftopmath.html", text: "roof sn1p3r r@nd0ms. with b0t or pe0p1e" },
     escr: { url: "ARC/escapeturnpike.html", text: "run away from the police" },
 
-    
+
     // Mobile buttons
     drialge: { url: "MOBILE/drive-algebra.html", text: "big truck and do stuff" },
     fnworld: { url: "MOBILE/fnworld.html", text: "rpg style" },
@@ -109,7 +109,8 @@ fetch("/navbar.html")
     crazyc3d: { url: "MOBILE/crazyc3d.html", text: "be sheep" },
     snowrir: { url: "MOBILE/snowrir.html", text: "snow riding" },
     bbalgebra: { url: "MOBILE/bbalgebra.html", text: "lebron" },
-    fnfriday: { url: "MOBILE/fnfriday.html", text: "tg1 friday" }
+    fnfriday: { url: "MOBILE/fnfriday.html", text: "tg1 friday" },
+    therb: { url: "MOBILE/retrb.html", text: "learn in the nfI" },
   };
 
   let hoverTimer;
