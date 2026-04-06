@@ -75,6 +75,12 @@ fetch("/navbar.html")
     dso: { url: "PC/DEDs.html", text: "might be slow or fast idk." },
     csg: { url: "PC/counterela.html", text: " chinese cs" },
  raga: { url: "PC/clr@gd0llarchers", text: "what a doll. shoot arrows at people" }, 
+ end: { url: "PC/cltimetog@mbl.html", text: "plaug3 1nc" }, 
+ gmd: { url: "PC/end0.html", text: "l@s veg@s 2" }, 
+
+
+
+
  
     // Arcade buttons
     yokedsqrt: { url: "ARC/yokedsqrt.html", text: "get strong and healthy" },
