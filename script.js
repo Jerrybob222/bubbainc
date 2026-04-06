@@ -47,14 +47,13 @@ fetch("/navbar.html")
 
 
 
-
-    /* previewer of apps */
+    /* previewer TM of apps */
     document.addEventListener("DOMContentLoaded", () => {
   const previewBox = document.getElementById("preview-box");
   const previewIframe = document.getElementById("preview-iframe");
   const previewText = document.getElementById("preview-text");
 
-  // Preview data object — URLs and descriptions left intact
+  // Preview data object  html and descriptions left 
   const previewData = {
     // PC buttons
     dta: { url: "Apps/DTA.html", text: "g†@ style app" },
@@ -75,7 +74,8 @@ fetch("/navbar.html")
     hl: { url: "PC/hl.html", text: "very popular." },
     dso: { url: "PC/DEDs.html", text: "might be slow or fast idk." },
     csg: { url: "PC/counterela.html", text: " chinese cs" },
-
+ ragd: { url: "PC/clr@gd0llarchers", text: "what a doll. shoot arrows at people" }, 
+ 
     // Arcade buttons
     yokedsqrt: { url: "ARC/yokedsqrt.html", text: "get strong and healthy" },
     FNAE: { url: "ARC/FNAE.html", text: "dont let the big e get you" },
@@ -92,6 +92,11 @@ fetch("/navbar.html")
     rtsr: { url: "ARC/rooftopmath.html", text: "roof sn1p3r r@nd0ms. with b0t or pe0p1e" },
     escr: { url: "ARC/escapeturnpike.html", text: "run away from the police" },
     sm2: { url: "ARC/sm99.html", text: " big apple" },
+
+
+
+
+
 
 
     // Mobile buttons
