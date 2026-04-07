@@ -98,6 +98,9 @@ fetch("/navbar.html")
     rtsr: { url: "ARC/rooftopmath.html", text: "roof sn1p3r r@nd0ms. with b0t or pe0p1e" },
     escr: { url: "ARC/escapeturnpike.html", text: "run away from the police" },
     sm2: { url: "ARC/sm99.html", text: " big apple" },
+    fn1: { url: "ARC/fnoof1.html", text: "work as a mall cop" },
+    fn2: { url: "ARC/fnoof2.html", text: "work as a mall cop 2" },
+
 
 
 
