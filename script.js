@@ -81,7 +81,7 @@ ddlc: { url: "PC/clddlc2", text: "the litature club of doki" },
 kid1: { url: "PC/kidgarden1", text: "kidnergarten part 1" }, 
 kid2: { url: "PC/kidgarden2", text: "kidnergarten part 2" }, 
 kid3: { url: "PC/kidgarden3", text: "kidnergarten part 3" }, 
-
+lol: { url: "PC/lool", text: "1v1+l0l" }, 
  
     // Arcade buttons
     yokedsqrt: { url: "ARC/yokedsqrt.html", text: "get strong and healthy" },
