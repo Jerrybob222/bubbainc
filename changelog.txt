@@ -2,12 +2,12 @@
 + r@gd0ll archers
 + cl@sh of v1kings
 + time to g@mble
-+  end0par@citic
++ end0par@citic
 + geo d@sh lite
 + fn@f 1 + 2
 * new download system made
-* download for Bacon may die
-* new download for n-g0n
+* download for Bacon may die, raldis c house, and something else
+* new download type for n-g0n
 - audio test (goon centeral)
 
 
