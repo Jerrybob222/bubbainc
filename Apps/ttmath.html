@@ -11,7 +11,7 @@
         <base href="https://cdn.jsdelivr.net/gh/genizy/web-port@latest/tattletail/">
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Tattletail</title>
+    <title>Math education: Learn how to solve quadratic equations using pemdas. AP calculus education</title>
     <script src="Build/UnityLoader.js"></script>
     <style>
       html,
@@ -24,7 +24,7 @@
         background: black;
       }
 
-      #gameContainer {
+      #appContainer {
         position: fixed;
         top: 0;
         left: 0;
@@ -91,7 +91,7 @@
     >
       LOADING...
     </div>
-    <div id="gameContainer" hidden></div>
+    <div id="appContainer" hidden></div>
     <script>
       const loadingText = document.querySelector("#loading-text");
       let totalBytes = 64246251.52;
@@ -148,7 +148,7 @@
         return parts;
       }
       function resizeUnityContainer() {
-        var container = document.getElementById("gameContainer");
+        var container = document.getElementById("appContainer");
         container.style.width = window.innerWidth + "px";
         container.style.height = window.innerHeight + "px";
       }
@@ -158,7 +158,7 @@
         const [dataUrl] = await Promise.all([mergeFiles(dataParts)]);
         var json = {
           companyName: "Waygetter Electronics",
-          productName: "Tattletail",
+          productName: "math education",
           dataUrl: dataUrl,
           wasmCodeUrl: "WebGL.wasm.code.unityweb",
           wasmFrameworkUrl: "WebGL.wasm.framework.unityweb",
@@ -172,8 +172,8 @@
           type: "application/json",
         });
         let blobUrl = URL.createObjectURL(blob);
-        document.querySelector("#gameContainer").hidden = false;
-        var gameInstance = UnityLoader.instantiate("gameContainer", json, {
+        document.querySelector("#appContainer").hidden = false;
+        var gameInstance = UnityLoader.instantiate("appContainer", json, {
           url: blobUrl,
           Module: {
             onRuntimeInitialized: function () {
