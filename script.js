@@ -77,7 +77,7 @@ fetch("/navbar.html")
  raga: { url: "PC/clr@gd0llarchers", text: "what a doll. shoot arrows at people" }, 
  end: { url: "PC/cltimetog@mbl.html", text: "las vegas pt2" }, 
  gmb: { url: "PC/end0.html", text: "paracite" }, 
-ddlt: { url: "PC/clddlc", text: "the litature club of doki" }, 
+ddlc: { url: "PC/clddlc", text: "the litature club of doki" }, 
 
 
 
@@ -125,6 +125,7 @@ ddlt: { url: "PC/clddlc", text: "the litature club of doki" },
     therb: { url: "MOBILE/retrb.html", text: "learn in the nfI" },
     clashingofclans: { url: "MOBILE/cl@shingofcl@ns.html", text: "clashing r0yale" },
     clgdlite: { url: "MOBILE/clgeodashlite.html", text: "ge0 d@sh1ng" },
+    flyg: { url: "MOBILE/flyingoril.html", text: "be the gorilla" },
 
   };
 
