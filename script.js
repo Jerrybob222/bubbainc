@@ -89,8 +89,6 @@ exe: { url: "PC/exe.html", text: "you have got to run" },
 ace: { url: "PC/ace.html", text: "court case" }, 
 just: { url: "PC/justice.html", text: "court case pt2" },
 years: { url: "PC/year.html", text: "court case pt3" },
-fnoof1: { url: "PC/fnoof1.html", text: "mall cop 1" },
-fnoof2: { url: "PC/fnoof2.html", text: "mall cop 2" },
 
 
 
@@ -122,6 +120,8 @@ fnoof2: { url: "PC/fnoof2.html", text: "mall cop 2" },
    ones: { url: "ARC/onesocialstudies.html", text: " legacy " },
    sra: { url: "ARC/schoolrunawaymath.html", text: " be a boy and runaway " },
    sf: { url: "ARC/street.html", text: " f1ght in the street " },
+fnoof1: { url: "ARC/fnoof1.html", text: "mall cop 1" },
+fnoof2: { url: "ARC/fnoof2.html", text: "mall cop 2" },
 
 
     // Mobile buttons
