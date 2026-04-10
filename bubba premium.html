@@ -37,7 +37,6 @@ lessons. These include, Algebra, English, Government, and Science.">
 
 
 
-  <title style=" color: blue; " >Login</title>
   <style>
     body {
       font-family: Arial;
@@ -45,13 +44,13 @@ lessons. These include, Algebra, English, Government, and Science.">
       height: 100vh;
       justify-content: center;
       align-items: center;
-      background: #000000;
+      background: #3f3f3f;
     }
 
     .box {
-      background: white;
+      background: rgb(253, 253, 253);
       padding: 30px;
-      border-radius: 10px;
+      border-radius: 5px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
       text-align: center;
       width: 250px;
@@ -66,7 +65,7 @@ lessons. These include, Algebra, English, Government, and Science.">
     button {
       padding: 10px;
       width: 100%;
-      background: black;
+      background: rgb(46, 154, 255);
       color: white;
       border: none;
       cursor: pointer;
@@ -83,13 +82,10 @@ lessons. These include, Algebra, English, Government, and Science.">
   </style>
 
 <div class="box">
-  <h2>Login</h2>
+  <h2 style="color:#000000; ">Login</h2>
 
   <input id="username" placeholder="username">
   <input id="password" type="password" placeholder="password">
-
-<!-- anyone using chrome console will get their ip address logged for a ban -->
-
 
   <button onclick="login()">Login</button>
 
@@ -98,6 +94,9 @@ lessons. These include, Algebra, English, Government, and Science.">
 
 <script>
   
+<!-- anyone using chrome console gets their ip address logged for a ban -->
+
+
   const users = {
     "admin": "niceshoes",
     "bubba": "inc",
@@ -112,7 +111,7 @@ lessons. These include, Algebra, English, Government, and Science.">
       localStorage.setItem("loggedIn", "true");
       localStorage.setItem("user", u);
 
-      window.location.href = "index.html";
+      window.location.href = "premiumstuff.html";
     } else {
       document.getElementById("msg").textContent = "No";
     }
