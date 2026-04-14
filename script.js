@@ -98,6 +98,13 @@ swords: { url: "PC/sword.html", text: "sw0rds f1ghting " },
 "hlm": { url: "PC/hlm.html", text: "m1ami h0tline" },
 "hkss": { url: "PC2/hkss.html", text: "like 1 gb big" },
 "stick1": { url: "PC/henprison.html", text: "flee it now" },
+"stick2": { url: "PC/complex.html", text: "flee it now but it is better than the last" },
+
+
+
+
+
+
 
 
     // Arcade buttons
