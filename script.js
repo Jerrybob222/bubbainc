@@ -97,7 +97,7 @@ swords: { url: "PC/sword.html", text: "sw0rds f1ghting " },
 "bige": { url: "PC/epsinedu.html", text: "epst31n basics (b@ldi)" },
 "hlm": { url: "PC/hlm.html", text: "m1ami h0tline" },
 "hkss": { url: "PC2/hkss.html", text: "like 1 gb big" },
-
+"stick1": { url: "PC/henprison.html", text: "flee it now" },
 
 
     // Arcade buttons
