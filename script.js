@@ -93,6 +93,8 @@ swords: { url: "PC/sword.html", text: "sw0rds f1ghting " },
 "3pb": { url: "PC/3pb.html", text: "3d p1n b@11 " },
 "karl": { url: "PC/karlson.html", text: "flip blue guys " },
 "hus": { url: "PC/hustle.html", text: "it is time to get going " },
+"rhit": { url: "PC/rgdlht.html", text: "beat up dolls" },
+"bige": { url: "PC/epsinedu.html", text: "epst31n basics (b@ldi)" },
 
 
 

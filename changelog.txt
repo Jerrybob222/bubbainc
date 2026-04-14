@@ -1,9 +1,10 @@
 
 4/13/25
-+ bug fix 
-+new server status
-
-
++ major bug fix 
++ new server status
++ vs code
++ ragdoll hit
++ epst31n basics
 
 
 
