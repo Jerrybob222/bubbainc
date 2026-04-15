@@ -101,6 +101,7 @@ swords: { url: "PC/sword.html", text: "sw0rds f1ghting " },
 "stick2": { url: "PC/complex.html", text: "flee it now but it is better than the last" },
 "stick3": { url: "PC/ship.html", text: "there is a ship in the air " },
 "stick4": { url: "PC/steal.html", text: "steal it now! " },
+dh: { url: "PC/drifh.html", text: "you must drift" },
 
 
 
@@ -135,6 +136,10 @@ swords: { url: "PC/sword.html", text: "sw0rds f1ghting " },
 fnoof1: { url: "ARC/fnoof1.html", text: "mall cop 1" },
 fnoof2: { url: "ARC/fnoof2.html", text: "mall cop 2" },
 snout: { url: "ARC/iron.html", text: "end the wolfs" },
+sbc: { url: "ARC/spacebar.html", text: "you must press the bar" },
+
+
+
 
     // Mobile buttons
     drialge: { url: "MOBILE/drive-algebra.html", text: "big truck and do stuff" },
@@ -160,6 +165,7 @@ snout: { url: "ARC/iron.html", text: "end the wolfs" },
   jhot: { url: "MOBILE/jt.html", text: "jhon w1ck pt2" },
    tript: { url: "MOBILE/tript.html", text: "Be the tung and escape" },
    status: { url: "TOOLS/status.html", text: "server status of all domains" },
+   coreb: { url: "MOBILE/coremath.html", text: "pin the ball" },
 
 
 
