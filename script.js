@@ -346,7 +346,7 @@ function openSite() {
         </style>
       </head>
       <body>
-        <iframe src="3.bubbaincorp.workers.dev"></iframe>
+        <iframe src="https://3.bubbaincorp.workers.dev"></iframe>
       </body>
     </html>
   `);
