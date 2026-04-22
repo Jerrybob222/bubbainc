@@ -23,4 +23,3 @@ document.addEventListener('keydown', function(event) {
     window.location.href = 'https://turner.schoology.com';
   }
 });
-

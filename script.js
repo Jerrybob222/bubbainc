@@ -314,6 +314,80 @@ document.addEventListener('mouseup', () => {
 
 
 
+function LessonFinder() {
+    window.location.href = "/TOOLS/LF.html";
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+function initNavbarDropdown() {
+  const dropdown = document.querySelector(".dropdown");
+  const btn = document.querySelector(".dropdown-btn");
+  const menu = document.getElementById("dropdownMenu");
+
+  if (!dropdown || !btn || !menu) {
+    console.log("Dropdown not found");
+    return;
+  }
+
+  let isPinned = false;
+  let closeTimeout;
+
+  function openMenu() {
+    clearTimeout(closeTimeout);
+    menu.classList.add("show");
+  }
+
+  function closeMenu() {
+    if (isPinned) return;
+
+    closeTimeout = setTimeout(() => {
+      menu.classList.remove("show");
+    }, 120);
+  }
+
+  // hover open
+  dropdown.addEventListener("mouseenter", openMenu);
+
+  // hover leave close
+  dropdown.addEventListener("mouseleave", closeMenu);
+
+  // click toggle pin
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    isPinned = !isPinned;
+
+    if (isPinned) {
+      openMenu();
+    } else {
+      menu.classList.remove("show");
+    }
+  });
+
+  // click outside
+  document.addEventListener("click", () => {
+    isPinned = false;
+    menu.classList.remove("show");
+  });
+}
+
+
+
+fetch("/navbar.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("navbar-container").innerHTML = data;
+
+    // IMPORTANT
+    initNavbarDropdown();
+  });
