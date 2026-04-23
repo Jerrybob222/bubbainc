@@ -171,7 +171,7 @@ brug: { url: "ARC/burger.html", text: "you must eat the burger now" },
    status: { url: "TOOLS/status.html", text: "server status of all domains" },
    coreb: { url: "MOBILE/coremath.html", text: "pin the ball" },
    geod1: { url: "MOBILE/geometrydreal.html", text: "learn geometry now" },
-
+   dl1: { url: "MOBILE/dl.html", text: "time to duck pt1 " },
 
 
 
