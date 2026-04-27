@@ -125,7 +125,7 @@ function initNavbarButtons() {
     // PC buttons
     dta: { url: "Apps/DTA.html", text: "gâ€ @ style app" },
     raldi: { url: "PC/RALDI.html", text: "modded version of b@ld1" },
-    m: { url: "broken", text: "broken. ill add better one soon." },
+    m: { url: "you will must be the one and only user on the whole world called", text: "press once to get a copy. large file" },
     superh: { url: "PC/suph.html", text: " hit red people" },
     uk: { url: "PC/ultrak1ll.html", text: " be a robot and hit z0mb13s" },
     bacon: { url: "PC/baconmay.html", text: "be a pig and attack" },
@@ -171,6 +171,7 @@ swords: { url: "PC/sword.html", text: "sw0rds f1ghting " },
 "dh": { url: "PC/drifh.html", text: "you must drift" },
 "coals": { url: "PC/coal.html", text: "mine it now" },
 "goose": { url: "PC/untitledmathproblems.html", text: "untitled goose g@m3." },
+"slimera": { url: "DLapps/slomer.html", text: "form a slime empire" },
 
 
 
