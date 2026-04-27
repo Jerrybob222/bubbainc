@@ -195,6 +195,7 @@ swords: { url: "PC/sword.html", text: "sw0rds f1ghting " },
 "stick4": { url: "PC/steal.html", text: "steal it now! " },
 "dh": { url: "PC/drifh.html", text: "you must drift" },
 "coals": { url: "PC/coal.html", text: "mine it now" },
+"goose": { url: "PC/untitledmathproblems.html", text: "untitled goose g@m3." },
 
 
 
@@ -267,6 +268,12 @@ brug: { url: "ARC/burger.html", text: "you must eat the burger now" },
   dl2: { url: "MOBILE/dl2.html", text: "time to duck pt2 " },
   dl3: { url: "MOBILE/dl3.html", text: "time to duck pt3 " },
   dl5: { url: "MOBILE/dl5.html", text: "time to duck pt5 " },
+  tio: { url: "MOBILE/terratoria.html", text: "isreal 😈" },
+brainrot: { url: "mobile/stealbrain.html", text: "merk" },
+smh: { url: "mobile/smash.html", text: "hit stuff with your balls" },
+snowio: { url: "mobile/snowio.html", text: "hit others with balls" },
+
+
 
   };
 
