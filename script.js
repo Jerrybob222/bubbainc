@@ -38,7 +38,8 @@ function openAboutBlankPage() {
       "1 -  domain 1\n" +
       "2 -  domain 2\n" +
       "3 -  domain 3\n" +
-      "4 - Enter custom URL"
+      "4 -  domain 4\n" +
+      "5 - Enter custom URL"
     );
     if (!choice) return;
 
@@ -54,11 +55,14 @@ function openAboutBlankPage() {
         url = "https://3.bubbaincorp.workers.dev";
         break;
       case "4":
+        url = "https://4.bubbaincorp.workers.dev";
+        break;
+      case "5":
         url = prompt("Enter the site URL to open in about:blank:");
         if (!url) return;
         break;
       default:
-        alert("Invalid selection. Please choose 1, 2, 3, or 4.");
+        alert(" Choose 1, 2, 3, or 4. not what you typed in");
         return;
     }
 
@@ -69,7 +73,9 @@ function openAboutBlankPage() {
       <!DOCTYPE html>
       <html>
         <head>
-          <title>Loading...</title>
+
+          <link rel="icon" type="image/x-icon" href="ixl.png">
+          <title>IXL | Dashboard</title>
           <style>
             html, body {
               margin: 0;
@@ -95,37 +101,6 @@ function openAboutBlankPage() {
     `);
 }
 
-function openABConverter() {
-    const url = prompt("Enter a website URL:");
-    if (!url) return;
-
-    const win = window.open("about:blank", "_blank");
-    if (!win) return;
-
-    win.document.write(`
-      <!DOCTYPE html>
-      <html>
-        <head>
-          <title>Loading...</title>
-          <style>
-            html, body {
-              margin: 0;
-              height: 100%;
-              overflow: hidden;
-            }
-            iframe {
-              border: none;
-              width: 100%;
-              height: 100%;
-            }
-          </style>
-        </head>
-        <body>
-          <iframe src="${url}"></iframe>
-        </body>
-      </html>
-    `);
-}
 
 function initNavbarButtons() {
     const opt1 = document.getElementById("opt1");
@@ -507,75 +482,4 @@ fetch("/navbar.html")
 
 
 
-
-  
-
-
-  document.addEventListener("click", (event) => {
-  const clicked = event.target.nodeType === Node.ELEMENT_NODE ? event.target : event.target.parentElement;
-  const target = clicked?.closest("#opt1, #opt2, #op2");
-  if (!target) return;
-
-  event.preventDefault();
-
-  if (target.id === "opt1") {
-    const win = window.open("about:blank", "_blank");
-    win.document.write(`
-      <!DOCTYPE html>
-      <html>
-        <head>
-          <title>Loading...</title>
-          <style>
-            html, body {
-              margin: 0;
-              padding: 0;
-              height: 100%;
-              overflow: hidden;
-              background: black;
-            }
-            iframe {
-              border: none;
-              width: 100%;
-              height: 100%;
-            }
-          </style>
-          <script>
-            alert("this is using domain 3. use A:B converter and type the domain you have if you dont use this one.");
-          </script>
-        </head>
-        <body>
-          <iframe src="https://3.bubbaincorp.workers.dev"></iframe>
-        </body>
-      </html>
-    `);
-  } else {
-    const url = prompt("Enter a website URL:");
-    if (!url) return;
-
-    const win = window.open("about:blank", "_blank");
-    win.document.write(`
-      <!DOCTYPE html>
-      <html>
-        <head>
-          <title>Loading...</title>
-          <style>
-            html, body {
-              margin: 0;
-              height: 100%;
-              overflow: hidden;
-            }
-            iframe {
-              border: none;
-              width: 100%;
-              height: 100%;
-            }
-          </style>
-        </head>
-        <body>
-          <iframe src="${url}"></iframe>
-        </body>
-      </html>
-    `);
-  }
-});
 
