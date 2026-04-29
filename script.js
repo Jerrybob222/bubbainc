@@ -104,9 +104,11 @@ function openAboutBlankPage() {
 
 function initNavbarButtons() {
     const opt1 = document.getElementById("opt1");
+    const opt1Main = document.getElementById("opt1-main");
     const op2 = document.getElementById("op2");
 
     if (opt1) opt1.addEventListener("click", openAboutBlankPage);
+    if (opt1Main) opt1Main.addEventListener("click", openAboutBlankPage);
     if (op2) op2.addEventListener("click", openABConverter);
 }
 
