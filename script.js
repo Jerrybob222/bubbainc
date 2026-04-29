@@ -38,26 +38,30 @@ function openAboutBlankPage() {
       "1 -  domain 1\n" +
       "2 -  domain 2\n" +
       "3 -  domain 3\n" +
-      "4 -  domain 4\n" +
-      "5 - Enter custom URL"
+      "4 -  soon\n" +
+      "5 -  soon\n" +
+      "6 - Enter custom URL"
     );
     if (!choice) return;
 
     let url;
     switch (choice.trim()) {
       case "1":
-        url = "https://1.bubbaincorp.workers.dev";
+        url = "https://1.1backup5acc.workers.dev/";
         break;
       case "2":
-        url = "https://2.bubbaincorp.workers.dev";
+        url = "https://2.1backup5acc.workers.dev/";
         break;
       case "3":
-        url = "https://3.bubbaincorp.workers.dev";
+        url = "https://3.1backup5acc.workers.dev/";
         break;
       case "4":
         url = "https://4.bubbaincorp.workers.dev";
         break;
       case "5":
+        url = "https://5.bubbaincorp.workers.dev";
+        break;
+      case "6":
         url = prompt("Enter the site URL to open in about:blank:");
         if (!url) return;
         break;
@@ -127,7 +131,7 @@ function initNavbarButtons() {
     // PC buttons
     dta: { url: "Apps/DTA.html", text: "gâ€ @ style app" },
     raldi: { url: "PC/RALDI.html", text: "modded version of b@ld1" },
-    m: { url: "broken", text: "broken. ill add better one soon." },
+    m: { url: "you will must be the one and only user on the whole world called", text: "press once to get a copy. large file" },
     superh: { url: "PC/suph.html", text: " hit red people" },
     uk: { url: "PC/ultrak1ll.html", text: " be a robot and hit z0mb13s" },
     bacon: { url: "PC/baconmay.html", text: "be a pig and attack" },
@@ -173,6 +177,7 @@ swords: { url: "PC/sword.html", text: "sw0rds f1ghting " },
 "dh": { url: "PC/drifh.html", text: "you must drift" },
 "coals": { url: "PC/coal.html", text: "mine it now" },
 "goose": { url: "PC/untitledmathproblems.html", text: "untitled goose g@m3." },
+"slimera": { url: "DLapps/slomer.html", text: "form a slime empire" },
 
 
 
