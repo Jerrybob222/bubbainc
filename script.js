@@ -141,7 +141,7 @@ function initNavbarButtons() {
     funy: { url: "PC/funnysh0t.html", text: " fps style lesson" },
     clovp : { url: "Apps/cloverp.html", text: "l@s v3g@s" },
     drive: { url: "PC2/DRIVINGLESSONS.html", text: "learn how to apply for a driving license." },
-    bf: { url: "PC/bul forcee.html", text: "might be broken i forgot" },
+    bf: { url: "PC/bulforcee.html", text: "might be broken i forgot" },
     hl: { url: "PC/hl.html", text: "very popular." },
     dso: { url: "PC/DEDs.html", text: "might be slow or fast idk." },
     csg: { url: "PC/counterela.html", text: " chinese cs" },
@@ -215,6 +215,7 @@ brug: { url: "ARC/burger.html", text: "you must eat the burger now" },
 ping: { url: "ARC/plainc.html", text: "you must covid 19" },
 uvu: { url: "ARC/uvuv.html", text: "UvuvwevwevweOnyetenvewveUgwemubwemOssas" },
 sfs: { url: "ARC/spacefl.html", text: "Nasa sim. download soon" },
+deltas: { url: "ARC/flightsim.html", text: "become the person of air" },
 
 
 
@@ -255,7 +256,8 @@ sfs: { url: "ARC/spacefl.html", text: "Nasa sim. download soon" },
 brainrot: { url: "mobile/stealbrain.html", text: "merk" },
 smh: { url: "mobile/smash.html", text: "hit stuff with your balls" },
 snowio: { url: "mobile/snowio.html", text: "hit others with balls" },
-minesw: { url: "mobile/msweepplu.html", text: "become a sweeper" }
+minesw: { url: "mobile/msweepplu.html", text: "become a sweeper" },
+"3ddash": { url: "mobile/3ddas.html", text: "3d version of gd" }
 
 
 
