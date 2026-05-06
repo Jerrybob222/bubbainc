@@ -176,7 +176,7 @@ swords: { url: "PC/sword.html", text: "sw0rds f1ghting " },
 "coals": { url: "PC/coal.html", text: "mine it now" },
 "goose": { url: "PC/untitledmathproblems.html", text: "untitled goose g@m3." },
 "slimera": { url: "DLapps/slomer.html", text: "form a slime empire" },
-
+"postoffice": { url: "PC/postaloffice.html", text: "post" },
 
 
 
