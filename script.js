@@ -253,11 +253,11 @@ deltas: { url: "ARC/flightsim.html", text: "become the person of air" },
   dl3: { url: "MOBILE/dl3.html", text: "time to duck pt3 " },
   dl5: { url: "MOBILE/dl5.html", text: "time to duck pt5 " },
   tio: { url: "MOBILE/terratoria.html", text: "isreal 😈" },
-brainrot: { url: "mobile/stealbrain.html", text: "merk" },
-smh: { url: "mobile/smash.html", text: "hit stuff with your balls" },
-snowio: { url: "mobile/snowio.html", text: "hit others with balls" },
-minesw: { url: "mobile/msweepplu.html", text: "become a sweeper" },
-"3ddash": { url: "mobile/3ddas.html", text: "3d version of gd" }
+brainrot: { url: "MOBILE/stealbrain.html", text: "merk" },
+smh: { url: "MOBILE/smash.html", text: "hit stuff with your balls" },
+snowio: { url: "MOBILE/snowio.html", text: "hit others with balls" },
+minesw: { url: "MOBILE/msweepplu.html", text: "become a sweeper" },
+"3ddash": { url: "MOBILE/3ddas.html", text: "3d version of gd" }
 
 
 
