@@ -477,3 +477,8 @@ html, body {
 
 
 
+/* dvd thingy */
+
+marquee { 
+  height: 100vh;
+}
