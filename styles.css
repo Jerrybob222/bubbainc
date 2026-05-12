@@ -471,14 +471,3 @@ html, body {
   pointer-events: auto;
 }
 
-
-
-
-
-
-
-/* dvd thingy */
-
-marquee { 
-  height: 100vh;
-}
