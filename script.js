@@ -221,6 +221,9 @@ chomp: { url: "ARC/com3d.html", text: "eat all of the cheese" },
 t3: { url: "ARC/triple3.html", text: "b@ld1 bas1cs m0d" },
 ac1: { url: "ARC/ac.html", text: "become the crosser" },
 funnyb: { url: "ARC/funnybat.html", text: "you will be a general" },
+skibi: { url: "ARC/skibi.html", text: "kirk sim" },
+
+
 
 
     // Mobile buttons
@@ -263,9 +266,8 @@ imp: { url: "MOBILE/impossible.html", text: "3d version of gd" },
 ltf: { url: "MOBILE/learntofly.html", text: "you will be educated" },
 motor2: { url: "MOBILE/motor2.html", text: "you will use a dirt bike" },
 yardsale: { url: "MOBILE/yardsale.html", text: "sell stuff" },
-
-
-
+snak: { url: "MOBILE/snak.html", text: "snake" },
+tomb: { url: "MOBILE/tomb.html", text: "dont implode" },
 
   };
 
