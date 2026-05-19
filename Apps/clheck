@@ -1,0 +1,264 @@
+import time
+import random
+import json
+import os
+import sys
+
+SAVE_FILE = "hacker_save.json"
+
+# -----------------------------
+# Utility Functions
+# -----------------------------
+
+def slow_print(text, delay=0.02):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    print()
+
+def fake_loading(text, seconds=2):
+    slow_print(text)
+    for i in range(seconds * 3):
+        sys.stdout.write(".")
+        sys.stdout.flush()
+        time.sleep(0.3)
+    print("\n")
+
+def clear():
+    os.system("cls" if os.name == "nt" else "clear")
+
+# -----------------------------
+# Game State
+# -----------------------------
+
+class HackerGame:
+    def __init__(self):
+        self.alias = "unknown"
+        self.xp = 0
+        self.level = 1
+        self.credits = 0
+        self.trace_level = 0
+        self.inventory = ["basic scanner"]
+        self.current_mission = None
+        self.missions_completed = 0
+
+    def save(self):
+        data = self.__dict__
+        with open(SAVE_FILE, "w") as f:
+            json.dump(data, f)
+        slow_print("[SYSTEM] Progress saved.")
+
+    def load(self):
+        if os.path.exists(SAVE_FILE):
+            with open(SAVE_FILE, "r") as f:
+                data = json.load(f)
+                self.__dict__.update(data)
+            slow_print("[SYSTEM] Save loaded.")
+        else:
+            slow_print("[SYSTEM] No save file found.")
+
+# -----------------------------
+# Missions
+# -----------------------------
+
+MISSIONS = [
+    {
+        "name": "Black Ice Firewall",
+        "target": "192.168.0.12",
+        "difficulty": 1
+    },
+    {
+        "name": "Neon Bank Node",
+        "target": "10.0.5.44",
+        "difficulty": 2
+    },
+    {
+        "name": "Ghost Satellite Uplink",
+        "target": "172.16.9.101",
+        "difficulty": 3
+    },
+    {
+        "name": "Omega Core Server",
+        "target": "8.8.8.8",
+        "difficulty": 4
+    }
+]
+
+# -----------------------------
+# Game Logic
+# -----------------------------
+
+def boot_sequence():
+    clear()
+    slow_print("INITIALIZING SYSTEM...", 0.05)
+    fake_loading("Bypassing security layers", 2)
+    fake_loading("Spoofing identity", 2)
+    fake_loading("Injecting terminal interface", 2)
+    slow_print("WELCOME, OPERATOR.\n")
+
+def level_up(game):
+    required_xp = game.level * 100
+    if game.xp >= required_xp:
+        game.level += 1
+        game.xp -= required_xp
+        slow_print(f"\n*** LEVEL UP! You are now Level {game.level} ***\n")
+        game.credits += game.level * 50
+        game.inventory.append("upgrade module")
+
+def show_status(game):
+    slow_print(f"""
+=== STATUS ===
+Alias: {game.alias}
+Level: {game.level}
+XP: {game.xp}
+Credits: {game.credits}
+Trace Level: {game.trace_level}%
+Inventory: {', '.join(game.inventory)}
+==============="")
+
+def scan_target(game, target):
+    slow_print(f"[SCAN] Targeting {target}...")
+    fake_loading("Scanning ports", 2)
+
+    open_ports = random.sample([21, 22, 80, 443, 3306, 8080, 8888], 3)
+    slow_print(f"[RESULT] Open ports detected: {open_ports}")
+
+    vuln = random.choice(["SQL Injection", "Buffer Overflow", "Weak Password", "Zero-Day Exploit"])
+    slow_print(f"[VULNERABILITY] Possible exploit: {vuln}")
+
+    game.xp += 20
+    game.trace_level += random.randint(1, 5)
+
+def breach(game, mission):
+    slow_print(f"[BREACH INITIATED] {mission['name']}")
+    difficulty = mission["difficulty"]
+
+    success = random.randint(1, 10) > difficulty * 2
+
+    fake_loading("Injecting payload", 2)
+    fake_loading("Bypassing firewall", 2)
+
+    if success:
+        reward = difficulty * 100
+        slow_print("[SUCCESS] Access granted!")
+        slow_print(f"You extracted data worth {reward} credits.")
+        game.credits += reward
+        game.xp += difficulty * 40
+        game.missions_completed += 1
+    else:
+        slow_print("[FAILED] Security countermeasures activated!")
+        game.trace_level += difficulty * 15
+
+def decrypt_minigame(game):
+    slow_print("[DECRYPTION MODULE ACTIVATED]")
+    code = str(random.randint(1000, 9999))
+    scrambled = list(code)
+    random.shuffle(scrambled)
+
+    slow_print(f"Encrypted key: {''.join(scrambled)}")
+    guess = input("Enter decrypted 4-digit code: ")
+
+    if guess == code:
+        slow_print("[ACCESS GRANTED] Decryption successful!")
+        game.xp += 50
+        game.credits += 75
+    else:
+        slow_print("[ACCESS DENIED] Wrong key.")
+        game.trace_level += 10
+
+def trace_warning(game):
+    if game.trace_level >= 100:
+        slow_print("\n!!! TRACE COMPLETE - CONNECTION TERMINATED !!!")
+        slow_print("You were caught by system ICE.\nGAME OVER.")
+        sys.exit()
+
+    elif game.trace_level >= 70:
+        slow_print("WARNING: TRACE LEVEL CRITICAL!")
+
+    elif game.trace_level >= 40:
+        slow_print("Alert: Incoming trace detected.")
+
+def mission_select(game):
+    slow_print("\nAvailable Missions:\n")
+    for i, m in enumerate(MISSIONS):
+        slow_print(f"{i+1}. {m['name']} (Difficulty {m['difficulty']})")
+
+    choice = input("\nSelect mission: ")
+
+    if choice.isdigit() and 1 <= int(choice) <= len(MISSIONS):
+        game.current_mission = MISSIONS[int(choice)-1]
+        slow_print(f"Mission selected: {game.current_mission['name']}")
+    else:
+        slow_print("Invalid selection.")
+
+# -----------------------------
+# Main Loop
+# -----------------------------
+
+def main():
+    game = HackerGame()
+    boot_sequence()
+
+    game.alias = input("Enter hacker alias: ")
+
+    while True:
+        trace_warning(game)
+        level_up(game)
+
+        print("\n--- TERMINAL ---")
+        cmd = input("> ").strip().lower()
+
+        if cmd == "help":
+            slow_print("""
+COMMANDS:
+status      - Show system status
+scan        - Scan current mission target
+breach      - Attempt system breach
+decrypt     - Run decryption module
+mission     - Select mission
+save        - Save progress
+load        - Load progress
+exit        - Quit simulator
+""")
+
+        elif cmd == "status":
+            show_status(game)
+
+        elif cmd == "scan":
+            if game.current_mission:
+                scan_target(game, game.current_mission["target"])
+            else:
+                slow_print("No mission selected.")
+
+        elif cmd == "breach":
+            if game.current_mission:
+                breach(game, game.current_mission)
+            else:
+                slow_print("No mission selected.")
+
+        elif cmd == "decrypt":
+            decrypt_minigame(game)
+
+        elif cmd == "mission":
+            mission_select(game)
+
+        elif cmd == "save":
+            game.save()
+
+        elif cmd == "load":
+            game.load()
+
+        elif cmd == "exit":
+            slow_print("Disconnecting...")
+            break
+
+        else:
+            slow_print("Unknown command. Type 'help'.")
+
+        game.trace_level += random.randint(0, 3)
+
+if __name__ == "__main__":
+    main()
+
+    

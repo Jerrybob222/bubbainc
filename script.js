@@ -181,7 +181,7 @@ swords: { url: "PC/sword.html", text: "sw0rds f1ghting " },
 "tabs": { url: "PC/tabss.html", text: "totally acurate ba††le s1m" },
 "bend": { url: "PC/beand.html", text: "the machine of ink" },
 "slowro": { url: "PC/slowroad.html", text: "drive s1m" },
-
+"hecker": { url: "PC/heck.html", text: "hecker s1m" },
 
     // Arcade buttons
     yokedsqrt: { url: "ARC/yokedsqrt.html", text: "get strong and healthy" },
